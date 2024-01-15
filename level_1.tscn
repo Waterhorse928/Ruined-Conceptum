@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bmb70v877p885"]
+[gd_scene load_steps=4 format=3 uid="uid://bmb70v877p885"]
+
+[ext_resource type="PackedScene" uid="uid://c3bc7rx6xq2kl" path="res://block.tscn" id="1_44vab"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_116lb"]
 size = Vector3(10, 0.5, 10)
@@ -20,3 +22,16 @@ mesh = SubResource("BoxMesh_116lb")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
 shape = SubResource("BoxShape3D_ggsh3")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.460029, 0.750055, -0.475174, 0, 0.535164, 0.844748, 0.887904, -0.388609, 0.246191, -2.78469, 3.9153, 2.14242)
+shadow_enabled = true
+
+[node name="Block1" parent="." instance=ExtResource("1_44vab")]
+transform = Transform3D(0.819588, -0.563032, -0.106159, 0.279777, 0.554972, -0.783409, 0.5, 0.612372, 0.612372, -1.22706, 3, -0.731802)
+
+[node name="Block2" parent="." instance=ExtResource("1_44vab")]
+transform = Transform3D(-0.536601, -0.742764, 0.400451, -0.715659, 0.65202, 0.250403, -0.447092, -0.15222, -0.881441, 0, 3.68093, -1.34765)
+
+[node name="Block3" parent="." instance=ExtResource("1_44vab")]
+transform = Transform3D(0.280202, -0.82767, -0.486259, -0.75534, 0.122508, -0.643781, 0.592409, 0.54768, -0.590845, 0.526399, 4.68217, -0.819302)
