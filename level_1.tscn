@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bmb70v877p885"]
+[gd_scene load_steps=7 format=3 uid="uid://bmb70v877p885"]
 
 [ext_resource type="PackedScene" uid="uid://c3bc7rx6xq2kl" path="res://block.tscn" id="1_44vab"]
 [ext_resource type="PackedScene" uid="uid://dgsim8atch2iy" path="res://bartholomew.tscn" id="2_4wbqv"]
+[ext_resource type="Texture2D" uid="uid://bfiatcrlqu24h" path="res://icon.svg" id="3_pfx0n"]
+[ext_resource type="Script" path="res://Icon.gd" id="4_s37wd"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_116lb"]
 size = Vector3(10, 0.5, 10)
@@ -12,7 +14,7 @@ size = Vector3(10, 0.5, 10)
 [node name="Level1" type="Node3D"]
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.970586, 0.240753, 0, -0.240753, 0.970586, 0, 1.34327, 3)
+transform = Transform3D(1, 0, 0, 0, 0.970586, 0.240753, 0, -0.240753, 0.970586, 0, 1.34327, 3.62646)
 
 [node name="Floor" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.252573, 0)
@@ -41,3 +43,8 @@ transform = Transform3D(0.280202, -0.82767, -0.486259, -0.75534, 0.122508, -0.64
 
 [node name="Bartholomew" parent="." instance=ExtResource("2_4wbqv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.57305, 0.797873, 0)
+
+[node name="Icon" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.04787, 1.18031)
+texture = ExtResource("3_pfx0n")
+script = ExtResource("4_s37wd")
