@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://bmb70v877p885"]
+[gd_scene load_steps=8 format=3 uid="uid://bmb70v877p885"]
 
 [ext_resource type="PackedScene" uid="uid://c3bc7rx6xq2kl" path="res://block.tscn" id="1_44vab"]
 [ext_resource type="PackedScene" uid="uid://dgsim8atch2iy" path="res://bartholomew.tscn" id="2_4wbqv"]
 [ext_resource type="Texture2D" uid="uid://bfiatcrlqu24h" path="res://icon.svg" id="3_pfx0n"]
 [ext_resource type="Script" path="res://Icon.gd" id="4_s37wd"]
+[ext_resource type="PackedScene" uid="uid://d1vjgh4054jca" path="res://coin.tscn" id="5_04bna"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_116lb"]
 size = Vector3(10, 0.5, 10)
@@ -27,7 +28,7 @@ mesh = SubResource("BoxMesh_116lb")
 shape = SubResource("BoxShape3D_ggsh3")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.460029, 0.750055, -0.475174, 0, 0.535164, 0.844748, 0.887904, -0.388609, 0.246191, -2.78469, 3.9153, 2.14242)
+transform = Transform3D(0.460029, 0.750055, -0.475174, -0.237476, 0.619604, 0.748128, 0.855557, -0.231318, 0.463156, -2.78469, 3.9153, 2.14242)
 shadow_enabled = true
 
 [node name="Blocks" type="Node3D" parent="."]
@@ -48,3 +49,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.57305, 0.797873, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.04787, 1.18031)
 texture = ExtResource("3_pfx0n")
 script = ExtResource("4_s37wd")
+
+[node name="Coin1" parent="." instance=ExtResource("5_04bna")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.47158, 0.722362, 1.78877)

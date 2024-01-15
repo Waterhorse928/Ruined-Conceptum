@@ -1,0 +1,63 @@
+[gd_scene load_steps=3 format=3 uid="uid://m4q0c4sp7qov"]
+
+[ext_resource type="PackedScene" uid="uid://tai4f7ckoke1" path="res://Assets/Models/Rain Test.glb" id="1_284qi"]
+[ext_resource type="Material" uid="uid://cifkj06anlxb1" path="res://Assets/Texture/Blue.tres" id="2_clgwh"]
+
+[node name="Rain Test" instance=ExtResource("1_284qi")]
+
+[node name="Cube_039" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="Cube_040" parent="." index="1"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="Cube_041" parent="." index="2"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="Cube_042" parent="." index="3"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="Cube_043" parent="." index="4"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="Cube_044" parent="." index="5"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="Cube_045" parent="." index="6"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="Cube_046" parent="." index="7"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="Cube_047" parent="." index="8"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="Cube_048" parent="." index="9"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="Cube_049" parent="." index="10"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="Cube_050" parent="." index="11"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="Cube_051" parent="." index="12"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="Cube_052" parent="." index="13"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="Cube_053" parent="." index="14"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="Cube_054" parent="." index="15"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="Cube_055" parent="." index="16"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="Cube_056" parent="." index="17"]
+surface_material_override/0 = ExtResource("2_clgwh")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." index="18"]
+transform = Transform3D(0.372541, -0.707465, 0.600589, 0.372918, 0.706749, 0.601197, -0.849791, -2.53258e-08, 0.527119, 4.13073, 4.98884, 0)
