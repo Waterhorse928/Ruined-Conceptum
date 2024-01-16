@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://b83y2jln3o4wh"]
+
+[ext_resource type="PackedScene" uid="uid://dgsim8atch2iy" path="res://bartholomew.tscn" id="2_o1how"]
+[ext_resource type="PackedScene" uid="uid://b4pwpkefgk5xl" path="res://coin 2.tscn" id="3_sygax"]
+[ext_resource type="PackedScene" uid="uid://dwkik047l7r0" path="res://Assets/Models/First Area Test 2.glb" id="5_eyoou"]
+
+[sub_resource type="Environment" id="Environment_chv8c"]
+background_mode = 1
+background_color = Color(0.0705882, 0.576471, 0.682353, 1)
+ambient_light_color = Color(0.219608, 0.360784, 0.113725, 1)
+ambient_light_energy = 4.96
+reflected_light_source = 2
+glow_enabled = true
+glow_intensity = 5.7
+glow_strength = 2.0
+glow_bloom = 1.0
+volumetric_fog_density = 0.2345
+volumetric_fog_albedo = Color(0, 0.741176, 0.870588, 1)
+volumetric_fog_emission = Color(0.290196, 0.478431, 0.541176, 1)
+
+[node name="Level1" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.970586, 0.240753, 0, -0.240753, 0.970586, 0, 1.34327, 3.62646)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.460029, 0.750055, -0.475174, -0.237476, 0.619604, 0.748128, 0.855557, -0.231318, 0.463156, -2.78469, 3.9153, 2.14242)
+shadow_enabled = true
+
+[node name="Bartholomew" parent="." instance=ExtResource("2_o1how")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.57305, 0.797873, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_chv8c")
+
+[node name="First Area Test 2" parent="." instance=ExtResource("5_eyoou")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.3767, 0, 13.2335)
+
+[node name="Coin" parent="." instance=ExtResource("3_sygax")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46923, 0.608245, -6.17927)

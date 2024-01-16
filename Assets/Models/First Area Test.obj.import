@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://fsfqi8m83o20"
+path="res://.godot/imported/First Area Test.obj-a1f8cf1c0bce295c5287939bfa592df0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/First Area Test.obj-a1f8cf1c0bce295c5287939bfa592df0.mesh"]
+
+source_file="res://Assets/Models/First Area Test.obj"
+dest_files=["res://.godot/imported/First Area Test.obj-a1f8cf1c0bce295c5287939bfa592df0.mesh", "res://.godot/imported/First Area Test.obj-a1f8cf1c0bce295c5287939bfa592df0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

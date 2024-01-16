@@ -1,0 +1,118 @@
+[gd_scene load_steps=12 format=3 uid="uid://m4q0c4sp7qov"]
+
+[ext_resource type="PackedScene" uid="uid://tai4f7ckoke1" path="res://Assets/Models/Rain Test.glb" id="1_284qi"]
+[ext_resource type="Material" uid="uid://cd0k06u4dy372" path="res://Assets/Texture/Rain Skin.tres" id="2_uu0j7"]
+[ext_resource type="Material" uid="uid://cloj84t6aaue7" path="res://Assets/Texture/Rain Grey.tres" id="3_bi577"]
+[ext_resource type="Material" uid="uid://ik1tspv08brf" path="res://Assets/Texture/Rain Black.tres" id="4_lyrnr"]
+[ext_resource type="Material" uid="uid://c81wyrlwv17av" path="res://Assets/Texture/Rain White.tres" id="5_ehoos"]
+[ext_resource type="Material" uid="uid://cbm3os7jyxrav" path="res://Assets/Texture/Face White.tres" id="5_iimlm"]
+[ext_resource type="Material" uid="uid://boi54tuwkqn5d" path="res://Assets/Texture/Face Black.tres" id="6_quaki"]
+[ext_resource type="Material" uid="uid://7rya5j5s7dr5" path="res://Assets/Texture/Face Grey.tres" id="8_2ulda"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8jcm4"]
+cull_mode = 1
+shading_mode = 0
+diffuse_mode = 3
+specular_mode = 2
+albedo_color = Color(0, 0, 0, 1)
+refraction_enabled = true
+grow = true
+grow_amount = 0.03
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_umsoa"]
+next_pass = SubResource("StandardMaterial3D_8jcm4")
+diffuse_mode = 3
+specular_mode = 1
+disable_fog = true
+albedo_color = Color(0.054902, 0.0666667, 0.0627451, 1)
+albedo_texture_force_srgb = true
+metallic_specular = 0.0
+roughness = 0.49
+rim_enabled = true
+rim = 0.42
+rim_tint = 0.66
+refraction_scale = 0.01
+
+[sub_resource type="Environment" id="Environment_564v1"]
+background_mode = 1
+background_color = Color(0.309804, 0.47451, 0.509804, 1)
+glow_enabled = true
+glow_strength = 0.9
+glow_bloom = 0.18
+glow_blend_mode = 1
+glow_hdr_threshold = 0.13
+glow_hdr_scale = 1.96
+glow_hdr_luminance_cap = 181.82
+glow_map_strength = 0.7
+
+[node name="Rain Test" instance=ExtResource("1_284qi")]
+
+[node name="Cube_039" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_uu0j7")
+
+[node name="Cube_040" parent="." index="1"]
+transform = Transform3D(0.999995, 0.00303687, 0, -0.00303687, 0.999995, 0, 0, 0, 1, 0, 4.24045, 0)
+surface_material_override/0 = ExtResource("2_uu0j7")
+
+[node name="Cube_041" parent="." index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_umsoa")
+
+[node name="Cube_042" parent="." index="3"]
+surface_material_override/0 = ExtResource("3_bi577")
+
+[node name="Cube_043" parent="." index="4"]
+surface_material_override/0 = ExtResource("4_lyrnr")
+
+[node name="Cube_044" parent="." index="5"]
+surface_material_override/0 = ExtResource("3_bi577")
+
+[node name="Cube_045" parent="." index="6"]
+surface_material_override/0 = ExtResource("5_iimlm")
+
+[node name="Cube_046" parent="." index="7"]
+surface_material_override/0 = ExtResource("6_quaki")
+
+[node name="Cube_047" parent="." index="8"]
+surface_material_override/0 = ExtResource("5_ehoos")
+
+[node name="Cube_048" parent="." index="9"]
+surface_material_override/0 = ExtResource("6_quaki")
+
+[node name="Cube_049" parent="." index="10"]
+surface_material_override/0 = ExtResource("6_quaki")
+
+[node name="Cube_050" parent="." index="11"]
+surface_material_override/0 = ExtResource("8_2ulda")
+
+[node name="Cube_051" parent="." index="12"]
+surface_material_override/0 = ExtResource("8_2ulda")
+
+[node name="Cube_052" parent="." index="13"]
+surface_material_override/0 = ExtResource("4_lyrnr")
+
+[node name="Cube_053" parent="." index="14"]
+surface_material_override/0 = ExtResource("2_uu0j7")
+
+[node name="Cube_054" parent="." index="15"]
+surface_material_override/0 = ExtResource("5_ehoos")
+
+[node name="Cube_055" parent="." index="16"]
+surface_material_override/0 = ExtResource("5_ehoos")
+
+[node name="Cube_056" parent="." index="17"]
+surface_material_override/0 = ExtResource("4_lyrnr")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51819, 4.29325, 1.29751)
+light_energy = 1.305
+light_indirect_energy = 1.152
+light_volumetric_fog_energy = 2.981
+
+[node name="Camera3D" type="Camera3D" parent="." index="19"]
+transform = Transform3D(1, 0, 0, 0, 0.96384, 0.266481, 0, -0.266481, 0.96384, 0, 4.01111, 5.55989)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." index="20"]
+transform = Transform3D(-0.423283, -0.74273, 0.51883, -4.68163e-09, 0.572661, 0.819792, -0.905998, 0.347004, -0.242397, 5.53014, 1.90276, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="21"]
+environment = SubResource("Environment_564v1")
