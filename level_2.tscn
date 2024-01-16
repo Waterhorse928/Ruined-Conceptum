@@ -20,9 +20,6 @@ volumetric_fog_emission = Color(0.290196, 0.478431, 0.541176, 1)
 
 [node name="Level1" type="Node3D"]
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.970586, 0.240753, 0, -0.240753, 0.970586, 0, 1.34327, 3.62646)
-
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.460029, 0.750055, -0.475174, -0.237476, 0.619604, 0.748128, 0.855557, -0.231318, 0.463156, -2.78469, 3.9153, 2.14242)
 shadow_enabled = true
@@ -34,7 +31,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.57305, 0.797873, 0)
 environment = SubResource("Environment_chv8c")
 
 [node name="First Area Test 2" parent="." instance=ExtResource("5_eyoou")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.3767, 0, 13.2335)
+transform = Transform3D(0.806353, 0, 0, 0, 0.564315, 0, 0, 0, 0.848846, -11.3767, 0, 13.2335)
 
 [node name="Coin" parent="." instance=ExtResource("3_sygax")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46923, 0.608245, -6.17927)

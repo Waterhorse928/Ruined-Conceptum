@@ -13,4 +13,10 @@ script = ExtResource("1_vl5df")
 mesh = SubResource("BoxMesh_yw3gi")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.865551, 0, 0, 0, 0.865551, 0, 0, 0, 0.865551, 0, 0, 0)
 shape = SubResource("BoxShape3D_yyll0")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.750941, 0.660369, 0, -0.660369, 0.750941, 0, 10.1533, 8.25918)
+fov = 70.2
+metadata/_edit_group_ = true
